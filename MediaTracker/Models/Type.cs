@@ -1,12 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace MediaTracker.Models
+﻿namespace MediaTracker.Models
 {
     public class Type
     {
-        public byte Id { get; set; }
-
-        [StringLength(50)]
+        public int Id { get; set; }
         public string Name { get; set; }
     }
 }

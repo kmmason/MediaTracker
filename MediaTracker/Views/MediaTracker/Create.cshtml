@@ -8,11 +8,11 @@
 <form>
     <div class="form-group">
         @Html.LabelFor(m => m.Viewer)
-        @Html.TextBoxFor(m => m.Viewer, new { @class = "form-control" })
+        @Html.DropDownListFor(m => m.Viewer, new SelectList(Model.Viewers, "Id", "Name"),new { @class = "form-control" })
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Type)
-        @Html.TextBoxFor(m => m.Type, new {  @class = "form-control"})
+        @Html.DropDownListFor(m => m.Type, new SelectList(Model.Types, "Id", "Name"),new {  @class = "form-control"})
     </div>
     <div class="form-group">
         @Html.LabelFor(m => m.Title)

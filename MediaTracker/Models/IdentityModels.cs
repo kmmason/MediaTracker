@@ -23,6 +23,7 @@ namespace MediaTracker.Models
         public DbSet<Media> Media { get; set; }
         public DbSet<Type> Type { get; set; }
         public DbSet<Viewer> Viewer { get; set; }
+        public object Viewers { get; internal set; }
 
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
